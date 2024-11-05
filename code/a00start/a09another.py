@@ -11,6 +11,7 @@ def get_product_info(product_id):
     
     # Retrieve product info
     product = products.get(product_id)
+    product["quantity"]=3;
     
     if product:
         return product["name"], product["price"], product["quantity"]
