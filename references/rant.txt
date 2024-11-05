@@ -1,0 +1,166 @@
+some basics.
+
+Learning programming... ok...
+1. be loyal to the project and respect architecture.
+2. tolerate uncertainty when in doubt write small programs
+which clarity the doubt on syntax or concept.
+3. generalize your learning so that we dont get killed
+by opinions of "frameworks" and "other langauges"...
+
+Programmer needs to be 5/5 in variables in functions
+
+variable.
+data type
+    operations
+    content.
+scope..
+
+functions
+defining a function
+    think who is going to call it.
+    how will he know what is input
+    whethr function suceeded or failed.
+
+assign a functions
+    pass function as a variable..
+    remember when we assign usually it means we dont
+    call the function.
+
+
+call a function.
+    open documentation until that you will not
+    know what function does.
+
+
+
+
+
+
+
+Python uses indentation for blocks,
+instead of curly braces. 
+Both tabs and spaces are supported,
+but the standard indentation requires 
+standard Python code to use four spaces
+
+every variable in python is an object.
+
+integers and floting pont numbers.
+x=7.0
+x=float(7)
+
+Strings come in single quotes or double quotes.
+remember + for concatenation.
+
+Assignments can be done on more than one variable 
+"simultaneously" on the same line like this
+
+a, b = 3, 4
+print(a, b)
+
+Datastructures..
+1. think of operations.
+2. think how many elements may be there... not important
+but still.
+3. then pick one from the library..
+l
+
+Array usage.
+create a list []
+use append... 
+iterate thru the list..
+
+** to indicate power relation ship
+
+2 to power of 3.  2 ** 3
+
+name = "John"
+age = 23
+print("%s is %d years old." % (name, age))
+
+
+The "in" operator
+The "in" operator could be used to check 
+if a specified object exists within an
+ iterable object container, such as a list:
+
+ name = "John"
+if name in ["John", "Rick"]:
+    print("Your name is either John or Rick.")
+
+x = 2
+if x == 2:
+    print("x equals two!")
+else:
+    print("x does not equal to two.")
+
+
+The 'is' operator
+Unlike the double equals operator "==", the 
+"is" operator does not match the values of 
+the variables, but the instances themselves.
+ For example:
+
+x = [1,2,3]
+y = [1,2,3]
+print(x == y) # Prints out True
+print(x is y) # Prints out False
+
+
+range in python
+# Prints out the numbers 0,1,2,3,4
+for x in range(5):
+    print(x)
+
+# Prints out 3,4,5
+for x in range(3, 6):
+    print(x)
+
+# Prints out 3,5,7
+for x in range(3, 8, 2):
+    print(x)
+
+
+ount = 0
+while True:
+    print(count)
+    count += 1
+    if count >= 5:
+        break
+
+# Prints out only odd numbers - 1,3,5,7,9
+for x in range(10):
+    # Check if x is even
+    if x % 2 == 0:
+        continue
+    print(x)
+
+
+count=0
+while(count<5):
+    print(count)
+    count +=1
+else:
+    print("count value reached %d" %(count))
+
+# Prints out 1,2,3,4
+for i in range(1, 10):
+    if(i%5==0):
+        break
+    print(i)
+else:
+    print("this is not printed because for loop is terminated because of break but not due to fail in condition")
+
+F-string: 
+The f before the opening quotation mark indicates that
+ this is a formatted string.
+  F-strings allow you to embed expressions inside
+   string literals using curly braces {}.
+
+   
+    
+
+
+
+
+
