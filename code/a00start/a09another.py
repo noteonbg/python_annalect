@@ -31,7 +31,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-"""
+
 def calculate_rectangle_properties(length, width):
     #Calculate the area and perimeter of a rectangle.
     area = length * width
@@ -44,13 +44,13 @@ def main():
     width = 3
 
     # Get the area and perimeter
-    area, perimeter = calculate_rectangle_properties(length, width)
+    a, b = calculate_rectangle_properties(length, width)
 
     # Display the results
     print(f"Rectangle Length: {length}")
     print(f"Rectangle Width: {width}")
-    print(f"Area: {area}")
-    print(f"Perimeter: {perimeter}")
+    print(f"Area: {a}")
+    print(f"Perimeter: {b}")
 
 if __name__ == "__main__":
     main()

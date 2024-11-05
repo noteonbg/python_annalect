@@ -121,7 +121,7 @@ for x in range(3, 8, 2):
     print(x)
 
 
-ount = 0
+count = 0
 while True:
     print(count)
     count += 1
