@@ -167,7 +167,8 @@ this funeral has began..
       input argument to function --- Array filled with random numbers.
       expected return value from the function, oddnum, evensnum
 
-if anybody has completed it, please share your screen..
+    attempt the code in assignment folder assignment.txt problem statement 1.
+
 	
       	
 
