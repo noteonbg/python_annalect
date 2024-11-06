@@ -5,7 +5,10 @@ Objective: Create a system to manage products in a manufacturing company.
 
 Requirements:
 
-Implement functions to add new products, list existing products, and update product information 
+Implement functions to
+ add new products,
+  list existing products, 
+  and update product information 
 (e.g., price).
 
 

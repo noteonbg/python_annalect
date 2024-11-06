@@ -1,0 +1,140 @@
+1. loyalty towards project...
+2. until we have perspective what will change
+no architecture will work..
+3. which part of the project should be loosely coupled which part is tightly coupled..
+4. coding does not need intelligence, design does.. you deal with contradiction.
+5. based on 4, you will decide your library making skills..
+
+dinosaur skill in coding..
+dont mix logic and presentation..
+
+next number getting is logic
+function called presentation
+def nextnumber(number):
+    return number+1
+
+def start
+   x=3 //how to get input from user..
+   y=nextnumber(x)
+   print(y)	
+
+zoom in..
+
+	1. function variables.
+	
+	90% of times when we deal with functions
+	input argument will turn out to be some object or dictionary or array.
+	return type also will turn some object or ditionary or array..
+
+	how many functions should i write.. no book will tell you..
+
+
+	1. can we write a function which takes a number and returns the next number 
+	in python.. kids favourite, input and return type both are int..
+	
+	2. can we write a function which takes a number and returns 5 multiples of that number.
+
+	3. write a function which takes a number and returns a dictionary dictionary has got
+	three keys
+	statuscode: 1 // in case multiples are got
+	statusmessage : got successfully or failed.
+	data: which have the array of 5 multiples.
+
+	of input passed is 0. then
+	statuscode :-1
+	statusmessage: failed to get multiples because input is zero
+	data: None.
+
+	those who have done do this program.
+	
+	List where each element of list is a dictionary
+	
+	{ taskId:1 , status: running }
+
+	[{taskid:1,status:running},	]
+
+
+	1. Add Task. -- ask for tasked and status and add to the list... a new dictionary
+	2. update Task  -- ask for tasked and ask for status and change status alone
+	3. Remove Task. -- ask for tasked and remove the dictionary from the List
+	4. print All Tasks and status.  -- print each task and its status.
+	5. print only running tasks.  -- print only tasked where status is running
+	0. exit
+
+	0 to end the program, else continue in the same menu...
+	if completed let me know
+
+
+	List of dictonaries..
+
+	whatever happens syntax is a function of time... you dont need byheart syntax..
+
+	when in doubt can i write a small program.
+
+	1. concept
+	2. give an example
+	3. hello world program
+	4. best practices.
+	5. logic building.
+
+
+	i believe in calling the function first and then defining the function
+	while calling the function i will be clear about what is input i needto pass
+	and what i need to return..
+	
+	filling the logic part that can come later on..
+
+	not recognizing that in real life, data is int... we always have objects..
+
+	List .. what will be its content... when you try to tell object..
+
+	class and object... 
+	dictionary also like an object..
+
+	zoom out... we are dealing with finally fastapi... fast api deals with a concept
+	called json..
+
+	json.. what is it... when everybody wants to tell they are doing complicated
+	json is standard to represent variables in a language independent way...
+	fast api... we will be using json...
+
+	we have to leanr to convert the json data into python object.
+	and python object into a json..
+	here the savior for us most of times is going to be dictonaries..
+
+
+
+
+
+	
+
+
+
+
+a02basics.py
+has got two global variables product_rates and inventory
+
+make this two variables as local varaibls
+in he function.run_manufacturing_simulation
+and ensure you pass product_rates and inventory
+as parameters to the other function
+
+so refactor ..
+
+starting from tomorrow for 2 days we will do programs
+with less logic building.. so that you understand syntax..
+
+when open code base we wil lencounter lot f syntax which
+we dont know how you deal with it...
+
+1. module system in python
+2. we will revist datastructures with simple examples
+3. decorators and generators..
+
+
+
+
+
+
+
+
