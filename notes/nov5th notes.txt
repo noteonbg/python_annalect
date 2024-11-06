@@ -1,413 +1,251 @@
-moral of the story.
-
-everybody agrees that practical is important..
-but zero theory means you have unlimited practicals..
-
-
-1. architecture to code..
-2. web.. http
-3. html,css and javascript all doing different jobs..
-4. in any project if we have view what will change, what will not change.
-that will give a context how things look like..
-5. we need a process to begin in any multistep process.
-5. I want to write html page  -- do you which part of page will page
-which part of page willnot change.. this will give a clue as to how to use id..
-6. approach of html.
-6.1 focus on html part.
-6.2 css part...
-6.3 javascript part
-
-quick intro on css and javascript..
-practical thing would be know some css to make some modifications..
-being decent in javascript and gettings things done is realistic.
-
-user friendly website..
-1. no scrolling.
-2. whatever you do number of clicks should be max 3 or less than 3..
-3. consistency... in color usage, in font usage, in layout...
-
-html5 has got some tags, these tags get interpreted by the browser..
-predefined tags...
-
-deciding on the structure of the page..
-form..group things..
-individual components in the form...
-
-<form action="where to process the request"  method="post"
-<input type="text" id="javascript/css" name="for server side compeonnt"
-
-method="http mode of sending the request"
-
-https://www.cleartrip.com/flights/results?adults=1&childs=0&infants=0&class=Economy&depart_date=06/11/2024&from=BLR&to=BOM&intl=n&origin=BLR%20-%20Bangalore,%20IN&destination=BOM%20-%20Mumbai,%20IN&sft=&sd=1730875497557&rnd_one=O&isCfw=false
-
-semantic web.. some more html tags.. 
-some basics of css.
-Event handling.
-javascript
-
-
-in any website.
-
-1. we have some information first...
-2. we want to divide the page into sections.
-3. inevitably there will be mechanisms to go different sections of the website or same web page...
-to indicate 3 we use the nav tag.. only nav tag alone will not do anything, inside hte nav tag we have
-to use some kind of links... ( routing)
-
-div tag  -- very old thing.. pre 2000 before html5 .. manage almost entire page by using div, span..
-nav tag, is an introduction after html 5... semantic structure...
-
-post html5 world is we will use semantic tags to indicate the intent ...
-ie we want a header we want a footer..
-
-what do you know in html
-
-1. some structure tags...
-	. hyperlink,div,span, semantic web.
-2. form tags.. action, method, id , name.. submit and normal button.
-3. why we give id.. to indicate changing part of the page..
-
-
-basic terminoology
-<input name="abc" id="t1" value="x"/> --tag
-name, id or value is considered as attributes..
-
-for any form component we need three things.
-1. label. which user can see and know what it communicates, place holder, label...
-2. name and id... name is used to recongize the information on the server side, id is used
-to pick the infomration in the client side,, (within javascript function)
-3. value... is value is contnet of the ui component.
-example 
-we enter something in the textbox how does the programmer come to know the conent of the textbox... by using value..
-we have a radio button
-
-value is important for all ui components,for textbox and its cousins.. content of textbox is the value
-for non textbox components like radio dropdown... value has to be specified else we land up with logical
-errors in the code..
-
-I cannot show any example right way I have to talk about javascript
-you can process the value in the html... you can process it on server side... or you in context of processing
-in client side.. in javascript
-
-Div --big superset..
-semantic web tags... came after div to give logical meaning to the html page...
-
-javascript
-
-1. respect it as a new programming language...
-2. people javascript is a scripting language... all this story is dead.. in todays world javascrpt
-is  programming language, as you can talk about c or c++
-
-what we can do with javascript anything you want...
-
-every programming language today is free..every programming languages wants developers...
-but in our context, why javascript.. because brower understands it..
-
-what are we going to do with javascript.
-
-1. set up some events in our web page.
-2. when that event occurs some function is getting called by the system.
-3. in that function what we will do.
-3.1 pick some section of the html page
-3.2  do some logic
-3.3 update the page.
-
-programming language.
-1. we should have idea regarding architecture...
-entry point, exit point how is your layering going on...
-
-we want access sections of html page let us call it as X.
-we want to do some logic.. let us call it as Y.
-dont mix x and y... doing that is called as architecture...
-how do you know something is not having an architecture change X, change everything in code..dont trust check...
-
-how many js files are you going to create and why.... basis for that will be architecture..
-
-javascript  -- this part if we ignore we will busy lot of English explanations and we will lot of volume of data to process.
-function
-functiond definition
-function calling
-function assignment
-
-variable..
-data type
-scope..
-
-how do you write javscript...
-1. we can write html page
-2. we can write it separately and link it..
-
-
-<script>
-function functionname()
-{
-	console.log("function getting called");
-
-}
-
-</script>
-
-when you define the function
-1. think who is going to call it, if you have no idea, dont define the function.
-
-
-<button onclick="f1()"
-dont tell f1 is getting called...
-f1 is getting assigned...
-we are telling the browser hey look when the click event happens then you must call the f1 function.
-
-Event handling..
-some change occurs and you have to report the change..
-change occurs == variable value changes... 
-
-in javascript 99% of our job will be to react to events.
-that means
-
-1. system will detect changes. and it will have a mechanism to report to us... provided we tell
-the system hey look I am interested in this changes 
-
-telling the system I am interested in this change.. event registration.
-so in javscript
-
-we should have clarity as to what is meaning of event..
-we are event listeners most of times and not event causers...
-who is detecting the event system.
-who is telling I am interested in the event.. let me know.. we..
-
-whenever you setup event handling... understand syntax wise there is  function assignment at work...
-some times syntax will look like function calling...
-
-
-respect javascript as a new language.. dont compare it with anything python... java or javascript
-
-
-
-
-remember these rules.
-
-1. function define
-1.1 think who is going to call it.
-1.2 also think how will you tell the caller function succed or function failed or does not matter..
-
-2. function calling
-2.1 open documentation... else we will do astrology on the function.
-
-
-3. function assignment.
-remember this is a mechanism to store function as a variable..or assign a function to a variable....
-remember when we function assignment it means two people are there X and Y.
-X is assigning the function, it means X is owner of the function, and X is not the caller of the function.
-
-
-how to create a variables and what data types are there
-
-data type... means content + operation..
-you choose data type based on the operation you want..
-
-two ways for todays world in javascript how to create variables..
-let x ="hello";
-x="hi"
-x=false;
-x=[];
-
-const x ="hello";  // this way means x cannot be reassigned
-
-let x="hello"
-x=have only the string type you cannot enforce.. in javascript.
-
-quick summary
-1. awareness regarding semantic html tags..
-2. javascript learn it as a new language...
-3. function . define, call or assign
-4. variable creation in javascript.. think of let or const.. depending on whether you want reassignment or not..
-
-standard stupidity if we can avoid great, else we will join the party..
-lot of people dont have the decency to respect javascript a new language, they want to compare it with 
-something they know....like java or c++ or python... this is pathetic.. so what some people have done is
-put fancy dress for javascript call it with  new name and make it look like java or c++ , example typescript.
-but any person who does not know javascript should not use the word web for presentation.
-
-learn to write javascript functions.
-when you define, pleas think who is going to call it..
-
-you can write n functions in javascript
-but be conscious which is event handling function and which one is not..
-why never use return in eventhandling functions because we are not calling what will system will do with
-the return...
-
-in all event handling functions.. we are event listeners..
-event handling is one way communication
-
-from event source to event listener.. event lister cannot talk back to the event source..
-
-
-
-
-
-
-rule no avoid writing global variables in real life, for today we will use global variables..
-
-
-
-
-
-
-
-
-
-
-javsacript has got data types, i tells dont tell me what the data type i will judge it dynamically.
-
-
-
-
-
-
-quick summary of javascript
-
-1. respect javascript as a new language..
-2. function... 
-define  -- think who is going to call it, kid will tell I will call it.. many a times in javascript system will calling
-it.. what we wrote was a event handling function.
-assign  -- this is what we do during event handling.. tell somebody hey look here is my function, you call it under
-some circumstance..
-call  -- open documentation.
-3. variable creation..
-let
-const
-data type is recognized by javascript dynamically.
-
-let x ="Hell"
-let y ="o"
-let z = x+y; + is defined with string...
-console.log(z);
-
-
-
-let x ="Hello"
-let y ="o"
-let z = x-y;  // minus operation is not defined in string datatype.
-console.log(z);
-
-what is moral. data type means decide operation and pick your type..
-no i dont want to decide on my operation.. ok in that case dont create the variable..
-
-let x ="hello"
-let y= x.toUppercase();  //function call, open documentation and read it...dont assume.
-console.log(x); // HELLO it wont... 
-y will bein uppercase...
-
-open documentation when you do function calls in any programming language dont assume..
-
-data types in javascript we will leanr it on need basis..
-
-array..   
-a contiguous allocation in memory... with a fixed size.. this is standard definition of array in any programming language
-
-but in javascript array does not have a size.
-
-let x=[];//this is an array..
-x.push(3);//you can add elements in to the array.
-
-for(let y=0; y< x.length; y++)
-{
-	console.log(x[y]);
-}
-
-let x={}// x is an object or X is a dictionary.. key and value pairs..
-let x = {length:3, breadth:4 };
-x[length]=7;
-x[breadth]=4;
-
-let x=0;
-x="abc";
-
-write a javascript function that takes a string as argument and returns the uppercase string
-call it in the script tag, supply argument as hello.. and see what is output you are getting.
-
-write a function takes two numbers and returns product of that number .
-2.30PM
-
-write a  javascript function which takes an array of 5 numbers and returns the sum of the array.
-let x =[2,3,4,5,6];
-x.length
-for...
-
-write a javascript function whose input is a number and it returns 5 multiples of the number.
-example if we input as 5, it should return 5,10,15,20,25
-if input is 2, it should return 2,4,6,8,10
-use the method called push to add an element into the array.
-
-
-	object or dictionary..
-	let x ={ m1:3, m2:"hello"}
-	let x = { productid:4, sales:44 }
-	console.log(x[productid])
-
-	function whose input argument is an object or dictionary  { length:4, breadth:5 }
-	return type should be  { perimeter: 18, area :20 }
-
-	input argument is a object  { length, breadth }
-	return type is an object  { perimeter, area }
-
-	what we should know is
-	how to write a function in javascript takes a simple type like a number, array, and an object as input
-	and returns as output.
-
-	one very important thing to recognize in any programming language is to know the data type we are having.
+zoom out...
+0. intent first , language next..
+1. loyalty is towards project and not technology.-- respect architectures..
+2. tolerating uncertainty..lower he bp level first.. writing a small program( poc)
+to clarify the syntax or concept.
+3. generalize our learning.. so that we can remember less. 
+
+zoom in...
+programmer..
+a programmer should convert English into funtions and varaibles fitting into an architecture.
+a programmer needs to be 5/5 in variables and functions.
+
+	minimum for knowing a programming language  ?
+	1. documentation standard (1/5)
+	2. variables, data type, scope, casting rules (5/5)
+	3. runtime error handling and quantification (5/5)
+	4. how to use string handling and date handling (2/5)
+	5. how to use Datastructures like Arrays and Dictionaries.. (2/5)
+	6. how to measure time taken, unit testing, profiling of code ( 0.000001/5)
+
+rules are guidelines we dont need to become a fan of them but violating rules
+should be explained why we violated..
+
+we should as far as possible avoid participating in project funerals..
+hardest question in the project, what will change, what will not change.. if we dont know
+this funeral has began..
+
+	infants like adjectives.
+	kids like numbers.
+	adults know numbers need interpretation also.
+
+	super scary word called "In depth"
+	1. in depth word makes sense if you can show thru the code how it impacts my coding..
+	2. if you cannot show thru code, how that impacts I dont wnat to know about about it.
+
+	free time spend time on architectures..
+
+	event handling..
+	what is an event?
+
+	intent is to apply and no to tell somebody I know this..
 	
-	let x ="3";
-	let y = x-1;
+	today collecting information has lost value. today the
+	question is what you do with the information collected
+	show me how it is useful to me..
 	
-	we should always be conscious what data type we are holding in the variable because operations
-	are decided on the basis of that only.
+	explosion of code generating tools .. chatgpt..
 
-	we are in the browser...the browser has got mechanism to process javascript that is reason
-	we are able to run our functions in the browser.
+	-----------------------------------------------
+
+	zoom in.
+
+	function.  (5/5)
 	
-	the browser has got various objects which is made available to us in our javascript code.
-	localstorage.
-	geolocation
-	document
-	navigator.
-	you get other objects also depending on which object you got properties and behavour will change..
+	1. define
+	   1.1 how is going to call it.
+	   1.2 how will you tell the caller that function succeed or failed.
+	   1.3 justify input and return type usage..			
+	2. call a function
+	   2.1 open documentation...	
+	3. assign a function  , it is 100% understood you are not going to call the function.
+	   3.1 a mechanism to pass a function as variable to another function..
 
 
+	can you give an example of assignment happening without using =
+	it always when you pass arguments to function
+
+	difference between kid and adult
+	kids are afraid of attending interviews
+	adults are afraid of conducting interviesws.
+
+	variable.
+	1. data type
+		data type tells what operations i can perform on things which are stored
+	2.  scope.
+
+	how do you know a function is complex function or a simple function..?
+	cyclmatic complexity...number of conditions keep it minimum.. 3.
+
+	better way of learning any technology is
+	3:7
+	3 is your own code..
+	7 is open  other person code.
+	
+	os is the boss.
+	anything which does not talk with the os directly is bound to be slow.
+
+	in any real life project irrespective of language there will be multiple files
+	we have to learn with deal with it..
+
+	Datastructures..
+	1. group of things.
+	2. some operations to perform
+	3. we think how to store it.
+	
+	challenge in Datastructure usage is not in selecting names but deciding
+ 	the operations first.
+
+	normal notebook  -- linear  -- search is not effective,,
+	indexed notebook  --non linear -- search is effective, branching will be there..
+	
+	what is Tree?
+	connected graph without cycles.
+
+	I want to add some items and print it...
+	which ds would you prefer.
+	Array
+	Dictionary..
+
+	anybody tells Datastructrues.
+	1. what operations you plan to do on that group.. tel this first tell this first..
+	2. then pick one from the library.
+	3. cross did you do the operations..
+
+	concept is not a function of time, syntax is.
+	dictionary most commonly used operation is give a key and extract the value..
+
+	what all operations we did with the ds.
+	Dictionary..
+	1. get operation.. ie get the value specifying the key...
 
 	
-	how to access sections of the html page in our javascript function.
+	new people
+	copy paste 3 examples on
+	range.. 
+	dictionary
+	array.
+
+
+
+	old familiar.
+	try to understand the examples in the given code..
+	assignment.txt attempt problemstatement1 and problemstatement2
+	
+
+	write a function that takes a number and returns 5 mutiples of the number.
+
+	test
+
+	2  return should 2,4,6,8,10	
+	3  return should 3,6,9,12,15
+
+	List.. array --linear ds.
+	1. add, view all, sort, linear filtering  
+
+	Dictionary  
+	key :value 
+	key will be some inbuilt type...
+	value will be some project specific type.. Employee, Task...
+	what operations.
+	1. get ... ie get the value specify the key.
+	2. iterate thru the dictionary...
+	3. remove the key and value...
+	4. get only keys , get only values.. in some cases..
+
+	Set..
+	non linear DS which does not have duplicates...
+
+	read only cousins...
+
+	dont cling to variable names... 
+
+
+      write a function that takes an array filled with random numbers 1 to 100
+      and return the sum of odd values and even values..
+
+      input argument to function --- Array filled with random numbers.
+      expected return value from the function, oddnum, evensnum
+
+    attempt the code in assignment folder assignment.txt problem statement 1.
+
+	you have keep presentation and logic separate
+
+	def addProduct(x)
+	{
+		return y
+	}
+	x and y are the hard things to think...
+	
+	def updateproduct(x)
+	{
+		return y;
+	}
+	
+	def listproduct(x)
+	{	
+
+		format the dictionary and print the dictionary..
+
+	}
+
+
+	start()
+	{
+		dictionary which will store the products
+		user input... product information is captured or ... hard coded value..
+		status=addproduct(dictionary,product);
+		//updte will ame as add product except function definition.
+	
+		
+	
+		
+
+
+	}
+	
+
+	
+      	
+
 	
 
 	
 
-	access section of the html page.. textbox, some html tag..
-	do some business logic
-	update the page or navigate to a different page.
-	
-	dont byheart the syntax, why syntax is non standardized each framework comes with an opinion
- 	of this needs to be done..
-
-	demonstate consciousness in javascript how..
-	when you tell give this element by Id... remember for which element did you get it..
-	in this case we got for a span element..
-
-	s1)	read some value from the ui.
-	s2)	some business logic -- contact the python server get the data...
-	s3)     change things in the ui. (how change part of the html page or go to another page..)
-
-
-	reading book gives you pleasure but never makes us useful in a project..
-	project means tolerate uncertainty, when we have a doubt, can we write a small program.
-
-	99% cases in javascript our job will be pass objects between functions and return also will objects.. 
-
-	when you set up events dont assume event handlin is working check check check..
-
-	kids hate constraints adults like constraints..
-
-	[2] -show multiples of 2
 
 	
+
+
+
+	
+
+
+
+
+
+	 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+		
 	
 
 
@@ -415,124 +253,7 @@ use the method called push to add an element into the array.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-css
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
 
 
 
