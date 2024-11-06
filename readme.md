@@ -9,8 +9,8 @@ https://www.w3schools.com/python/
 
 references
 
-<br/>1. https://peps.python.org/pep-0008/
-<br/>2. https://google.github.io/styleguide/pyguide.html
+1. https://peps.python.org/pep-0008/
+2. https://google.github.io/styleguide/pyguide.html
 
 
 

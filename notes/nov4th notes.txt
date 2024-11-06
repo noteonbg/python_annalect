@@ -169,6 +169,42 @@ this funeral has began..
 
     attempt the code in assignment folder assignment.txt problem statement 1.
 
+	you have keep presentation and logic separate
+
+	def addProduct(x)
+	{
+		return y
+	}
+	x and y are the hard things to think...
+	
+	def updateproduct(x)
+	{
+		return y;
+	}
+	
+	def listproduct(x)
+	{	
+
+		format the dictionary and print the dictionary..
+
+	}
+
+
+	start()
+	{
+		dictionary which will store the products
+		user input... product information is captured or ... hard coded value..
+		status=addproduct(dictionary,product);
+		//updte will ame as add product except function definition.
+	
+		
+	
+		
+
+
+	}
+	
+
 	
       	
 
