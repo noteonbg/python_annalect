@@ -3,8 +3,8 @@
 from product import Product
 
 class Factory:
-    def __init__(self, name):
-        self.name = name
+    def __init__(self, freak):
+        self.name = freak
         self.products = []
 
     def produce(self, product_name, price):

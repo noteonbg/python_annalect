@@ -44,8 +44,10 @@ class Product:
         return Product.manufacturing_plant
 
 # Create product instances
+i=3
 product1 = Product(product_id=101, name="Widget A", material_cost=50, labor_cost=30, quantity=100)
 product2 = Product(product_id=102, name="Widget B", material_cost=60, labor_cost=35, quantity=200)
+
 
 # Access instance variables and methods
 print("Product 1 Details:")

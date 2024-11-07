@@ -1,0 +1,279 @@
+how things are going to.
+
+syntax gaps filling
+modules and lamdas and implications of lamdas..
+
+1. presentation and logic.
+
+def add(x,y):
+	no usage of print and input...
+	do something with input and return something.
+
+def present():
+	print, input
+
+2. we need a mechanism to store data.. 
+
+
+Task
+id
+status.
+
+if you writing this to file.. 3 entries in the array, you wrote this to file.
+then modified the task added a new thing called Taskname.., reading the old
+entries will not be possible
+
+but if you create a table.. in the rdbms  when you store some rows in the table
+if you change the structure of the table old data i snot lost..
+
+
+create a folder called pocmodl
+create a file called mod.py
+create a file called main.py
+function called usemod, print hello in that function and call it.
+and see whether main.py is working.
+
+in mod.py
+write a function called poc2 input is  number and return type is 2 *number
+call this in main.py
+
+def poc2(num):
+   return 2 *num
+
+result = mod.poc2(3)
+
+focusing on input rgumetn function and return type is most important thing
+in the project..in real life this thing will turn out object or dictionaries or arrays.
+
+
+I want to work on X, X needs Y. and I dont know Y. question would be is can i learn
+Y quickly and come back to X and continue doing X rather than doing phd on Y.
+
+X= module system
+Y = Exception handling.
+
+Exception handling..
+1. focus on function, you got lines in the function, these lines can cause runtime
+trouble...
+
+try
+{
+f1()
+f2()
+
+}catch(Exception e)
+{
+
+}
+
+try block you can have normal flow of code.
+exception handling block you can have error handling code..
+
+why we do exception handling.. we can handle runtime errors. this is a wrong
+answer.. because runtime errors you can handle in anyway... you dont need
+exception handling only, example in c, we dont have exception handling
+but still we deal with runtime errors.
+
+exception handling main advantage is
+we separate normal flow of code from the error handling code..
+try block we have normal code.
+except we have the error handling flow..
+
+comprehension.
+1. we have a group
+2. we have to iterate thru the group
+3. apply some logic on each element what we are iterating
+4. create a new thing.
+use it.
+
+
+There is no absoluteness in dEsign.. design is non deterministic..
+any body who comes with a prescriptive approach to design will get shocked..
+
+not acceptable is mixing logic and presentation (usage of print and usage of input)
+
+in any programming language broad category of creating things
+
+1. library ( library has to be used with some application)  -- logic
+2. application    --presentation..
+
+
+when we write functions we dont want to change the signature of the function..
+
+write a function where over a period of time lot of things may change in my project
+but I dont want to change the input arguemnts to function or return type from
+the function.
+pass dictonaries to function..
+
+
+
+
+name
+input argument
+return type
+exception specification..
+
+class.
+
+
+
+lamda expression
+
+calculatearea()
+
+other option is to pass objects..to function.
+
+f1(a)
+a is an object...
+
+object.. variable.. data type == content  + operations..
+
+object is just a variable
+class is a data type..
+
+1. think of making functions take n number of arguments in any order..
+passing dictionary is an option
+
+2.pass object to a function.. you got think of a word called class.
+
+what is a class  -> user defined data data type
+data type = content + operations
+
+classpoc.py
+
+class Rect:
+	def __init__(self,l,b):
+		
+		
+
+print("hello")
+
+
+
+break and continue most of times in context of looks.
+pass is like a empty statement..
+
+
+
+
+
+
+
+
+
+
+a=1
+b=2
+c=3
+for
+ if a==1:#c
+    if b==2:#b
+       if c==3:#a
+	   break;
+
+treat class like a data type.
+
+list
+dictionary
+int
+string...
+
+like that class is a data type, project specific data type.. Model
+data type =content + operations.
+
+input arguments to functions are local variables..
+
+def f1(x):
+   pass
+
+print(x)
+
+constructor is a function that gets called automatically when object
+is created..
+
+when we define the function, think who is going to call it..
+
+
+
+def f1():
+     i=3
+     j=4
+
+
+once you create rectangle 
+__init_function
+	self.length=l
+	self.breadth=b
+
+
+
+what your told with self.length or self.breadh that will be content of the data type
+
+we have created a data type called Rectangle its content is length and breadth.
+operations.. 
+
+self...
+
+1. when we have functions in the class.. which needs to be called via the object.
+2. the function needs to know which object called the function.. 
+3. that is known by using a implicit variable called self
+
+
+only variables associated with self treat it as content of the data type
+any variable which is not associated with self despite being in teh class
+treat as a class variable 
+
+class -- way thru which you create a data type..
+data type content + operations.
+content = variables associated with self.. why.. each object of the class
+gets its own copy of the variable associated with self.
+
+look for self in variables and functions.
+if you see self in variables inside a  class...   -- content
+if you see self in function inside a class == operations.
+
+i create an object.. ok. what it contains you know now..
+on the object what all operations i can do... that also you know
+
+
+class != knowing oops
+
+what is class.
+class is a mechanism for us to create a project specific data type..
+
+using a class gives us a mechanism to get rid of this misery called global variables..
+
+in any language using global variables is pathetic...
+
+class  == departments
+content  -- files
+operations  -- people in the dept
+
+1. writing everything in one file is a sin.
+2. create multiple files but justify why...( presentation, logic)
+3. class like data type.. (think of self... without self the class is not a data type
+in python)
+only if we use self.. an object will content +operations.
+
+1. writing in multiple files.
+2. zero global variables..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

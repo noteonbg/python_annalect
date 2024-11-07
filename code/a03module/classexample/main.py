@@ -11,6 +11,9 @@ def main():
     factory.produce("Widget A", 19.99)
     factory.produce("Widget B", 24.99)
 
+    #content + operation when we use data type
+    
+
     # List produced products
     print("\nProducts produced:")
     for product in factory.list_products():

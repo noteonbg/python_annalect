@@ -18,9 +18,9 @@ def main():
         choice = input("Enter the choice (1/2/3/4): ")
 
         
-        
+        num3=4
         if choice == '1':
-            result = add(num1, num2)
+            result = add(num1, num2, num3)
             operation = "Addition"
         elif choice == '2':
             result = subtract(num1, num2)

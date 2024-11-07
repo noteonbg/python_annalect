@@ -21,6 +21,7 @@ def string_examples():
     # Changing case
     print("Uppercase:", full_greeting.upper())
     print("Lowercase:", full_greeting.lower())
+    print(full_greeting)
 
     # Checking for substrings
     print("Contains 'Alice'? :", 'Alice' in full_greeting)
