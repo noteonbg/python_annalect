@@ -23,7 +23,7 @@ print("First element:", my_list[0])   # Accessing the first element
 print("Last element:", my_list[-1])   # Accessing the last element
 
 # Modifying a list element
-my_list[2] = "banana"
+my_list[2] = "mango"
 print("Modified list:", my_list)
 
 # Adding an element to the list
