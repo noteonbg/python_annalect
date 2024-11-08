@@ -7,6 +7,9 @@ class Factory:
         self.name = freak
         self.products = []
 
+    def f1(self):    
+        print("f1 at work")
+
     def produce(self, product_name, price):
         product = Product(product_name, price)
         self.products.append(product)

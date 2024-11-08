@@ -5,6 +5,7 @@ my_dict = {
     3: "Cherry"
 }
 
+
 # 1. Adding to a dictionary
 my_dict[4] = "Date"  # Adds a new key-value pair: 4 -> "Date"
 print("After adding a new key-value pair (4: 'Date'):", my_dict)

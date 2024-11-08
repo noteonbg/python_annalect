@@ -1,0 +1,295 @@
+1. we need to write things in multiple files.
+2. class. (data type ) .. content + operations
+3. importance of this word called self when
+we say class is used like a data type..
+4. class like a dept...( information and people)
+
+we want to create two scenarios for our task..
+
+importance of valuing collaboration...
+
+when you look at function
+person X is defining the function  -- has to think of people who are going
+to use his function
+person Y is calling the function.
+
+class
+person X is going to create the class.
+person Y is going to use the class
+
+
+we want to have two more variations in the Taskscneario
+
+Task
+tasked
+status
+task name
+priority
+location.
+
+practically speaking there is not much of difference between using a dictonary
+and creating a class and using an object when it comes to python..
+
+
+architecture point of view..
+1. we dont want global variables..
+
+we will treat 
+presentation
+logic
+another part 
+as three classes. - three data types.
+these are architecture data types.. content + operations.
+
+
+
+
+
+
+
+Task
+  taskid
+  taskname
+  priority
+  status
+  location
+
+to create the object.
+__string__
+   return taskid, ta
+
+
+Logic 
+1. List of Task objects.  self.tasks=[]
+2. operations
+add
+update
+view all
+view all status is running
+delete
+
+
+
+4 python files
+fate.py
+
+presnentation.py
+
+logic.py
+
+
+task.py  ( 
+  taskid, taskname, status,priority, location
+  __init___
+  __string___
+
+Task class
+
+
+
+
+
+
+logic.py
+	def __init__(self):
+		self.tasks=[]
+
+	def add(self,task):  //task represents a task object
+		logic // add a task object into tasks array provided the taskid is not
+		present
+		if you add successfully return true from the add function
+		if taskid was already present in the array, then return false from
+		the function.
+
+	def viewall(self)  --just return the self.tasks list
+
+	def update(self,updatedTask) : // updatedTask has updated information
+	find the element in the list whose taskid matches and then update
+	the priority,location and status. alone return true if success else
+	false if failure.
+
+	
+
+Fate.py
+	task object..
+	logic object
+	status=logicobject.add(taskobject)
+	if status:
+	    print("added successfully")
+	else
+	    print("did not add");
+
+
+			
+
+	
+	
+	
+
+
+we are not going to write any __str__ function logic.py class
+
+
+
+add
+update
+delete
+view all
+view based on priority is running
+view based on location.. 
+
+
+
+ when inputs to the function are logically related , group them and pass it.
+ grouping  -- dictionary or an object.
+
+ show me a person who becomes fan of a rule, I will show you a stupid person.
+ Design is non deterministic..
+
+converted the architecture into a set of data types..
+
+data type  = content + operations
+
+
+Logic data type
+content == array or List
+operations = addTask, updateTask,viewAllTAsks,getTasksonStatus, getTaskonLocation
+	
+Task Data type
+taskid, status, name, location,priority
+
+in logic.py we have to conscious about
+1. what we take as input
+2. what we will return
+3. how will this return indicate failure or success to the caller of the function
+(one day it will be presentation or fastapi code )
+
+what logic to write..
+if you dont know logic it is ok..
+but atlest be clear about
+what will be the input
+what will be the output..
+
+def addTask(self,newTask):#new Task is task object which is given by the presentation
+    # will return true if task added and will return false if task not added
+    return True
+
+def gettasks_basedon_location(location):
+    return a list which contains task objects which are in that location.	
+   
+it means you show me two folders.
+ps1
+  logic.py   -- 4 functions  -- clarity in terms of input of these functions
+and return types
+  product.py	
+ps2
+  logic.py  --5 functions ...
+  product.py
+  order.py
+
+if we get struck with logic...logic is a ceo word..
+define what is logic you need..
+logic should always be context driven.. are you going to use it...
+
+in our case what is logic..
+1. create an array of objects.
+2. can you add to this array
+3. can you can search in this array
+4. can you fitler things in this array.
+5. can you sort thing in this array.
+
+ditionary
+1 can you know to create dictionary add keys and values.
+2. do you know to find whether key is existing or not..
+3. iterate thru only keys
+4. iterate thru only values.
+5. get both key and value...
+
+iterate thru both and create a new list or dictionary..
+
+login with most complicted thing.. like go google get google and id password
+and try to check it
+
+employee login
+employee filter .. based on various criterias.
+upload
+download to csv
+
+all your should now how to write
+logic.py
+x.py
+x= task, product, order, employee
+
+spend time not thinking but copy pasting code on arrays and dictionaries
+which does the above..
+
+
+arr.index(element_to_find)
+when we call a first what is first we should do... answer is simple..
+open documentation..
+
+
+
+
+Thanks a lot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
