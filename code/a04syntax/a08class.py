@@ -33,17 +33,23 @@ class Product:
                f"Quantity: {self.quantity}\n" \
                f"Total Cost: {self.calculate_total_cost()} EUR"
 
-    @classmethod
+    
     def get_total_products_manufactured(cls):
         # Class method to get the total number of products manufactured
-        return cls.total_products_manufactured
+        return Product.total_products_manufactured
 
-    @staticmethod
+    
     def get_manufacturing_plant():
         # Static method to get the manufacturing plant name
         return Product.manufacturing_plant
 
 # Create product instances
+
+
+print(f"\nTotal products manufactured: {Product.get_total_products_manufactured()}")
+print(f"\nTotal products manufactured: {Product.get_manufacturing_plant()}")
+
+"""
 i=3
 product1 = Product(product_id=101, name="Widget A", material_cost=50, labor_cost=30, quantity=100)
 product2 = Product(product_id=102, name="Widget B", material_cost=60, labor_cost=35, quantity=200)
@@ -57,10 +63,11 @@ print("Product 2 Details:")
 print(product2.get_product_details())
 
 # Access class variable (total products manufactured)
-print(f"\nTotal products manufactured: {Product.get_total_products_manufactured()}")
+
 
 # Access static variable (manufacturing plant name)
 print(f"\nManufacturing Plant: {Product.get_manufacturing_plant()}")
 
 # Access global variable (currency rate for cost conversion)
 print(f"\nCurrency Rate (USD to EUR): {currency_rate}")
+"""

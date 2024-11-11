@@ -1,0 +1,433 @@
+1. define a function and calling a function in python.
+2. working on multiple files.
+3. List.. and dictionary
+4. we know how to create a class, how to create an object
+of the class.
+
+everybody should be comfortable with list and dictionary.
+generics. again visit some datastructure based code.
+
+Lamda
+1. we are defining a function
+2. we are going to assign this function to some other function.
+
+	f2(f1);
+we are caller of f2.
+we are definer of f1.
+f2 tells give me a function which takes X as input
+and Y as return type and we have to write f1 exactly
+like that only... if we dont write we will get into logical
+problems..
+
+whenever we see lamda understand it is a style of writing
+function ( we do two things)
+1. create the function
+2. assign the function.
+
+definition of function  --X person
+assignment of function  -- X Person
+calling of the function  --X person..
+ok lamda was needed at all here..
+
+
+definition of function  --X person
+assignment of function  -- X Person
+calling of the function  --Y person..
+ok lamda was needed at all here..
+
+Y person is telling X person hey I want do some job.. which
+you like but then you must give me a function which I am asking
+for ...
+
+Y person is givng you a sort function.. X person likes sort
+but Y person is going to tell X hey look to sort you must
+give a me function which returns pos if first thing
+is bigger than second thing or neg if first thing is smaller than
+second thing and 0 if you both things are equal.
+
+you will see lamdas used more during sorting... thread programming
+if you generalize the scenario as X..
+
+X scenario will have two people.
+person 1 will define and asssing a function while calling
+function of person 2, person2 will call this assingned function.
+
+
+numbers = [1, 2, 3, 4, 5] 
+squared_numbers = map(lambda x: x ** 2, numbers)
+
+#--start
+def doubleit(x):
+   return x;
+#end
+ok=map(doubleit,numbers)
+print(ok);
+
+map is telling hey look i need an list.. ok you have given
+i needa  function which will take each element from the list and return
+something and logic is yours
+
+lamda..
+
+map -- written by person Y
+we are person X.
+person Y is expecting us to write a function..
+we are interested in map function
+so we define a fucnction all the map function by supplying our
+function as an input argument..
+
+what we did.
+1. we defined the function
+2. we assigned the function
+3. calling of function we dont do, somebody else will do it
+under a particular circumstance..
+
+
+even_numbers = filter(lambda x: x % 2 == 0, numbers)
+
+filter function is not ours.
+how many input argumetns or filter function.
+2
+1. function which takes something and returns a Boolean who will
+decide this we..
+2. second argument is a list..
+
+map is utility thru we can take each element of the list and transform
+it whatever other thing we want..
+
+return an iterator that applies function to every item of iterable, 
+yielding the results.
+
+returns a group of things which are navigable.
+applies function to every item of iterable,   -- your input needs
+to be a function and group of things on each element of this
+group things function is applied
+
+yielding the results. --we get something called generator.. on need
+basis you will get the value
+
+we do two things in lamda expression..
+1. define
+2. assign..
+
+calling will be done by the other person which we called.
+
+
+
+1. we have a list..
+2. we want to get a subset of it..  --original list
+3. on what basis you want the subset to be created.. has to be mentioned
+to the system.. lamda or function
+4. return type will be the new list..
+
+lamda is shortcut for creating a function and assigning it.. practically it.
+strict definition..
+
+point of view.. convience .. lamda
+
+why give names to function which we are not going to call.
+no difference..
+lamda could be slower.
+
+lamda expression see where it is used, it will used as input
+to some function... that function which you are calling and passing
+lamda ... will decide what lamda expression should return
+
+y=map(doubleit,x)
+y=filter(freaky,x)
+map and filter both take lamda expression map expects   a function
+to return some value..
+filter expect the function to return some Boolean only...
+
+10 element list.
+you use map and return type is a list which contains 10 elements only.
+
+
+10 element list
+you use filter, return type can be max 10, 0 or any number between 0 and 10
+depending on how many elements in the list satisfied that condition..
+
+
+
+
+
+
+
+
+what is Lamda.
+1. Lamda is a way thru which you write a function and assign in a function
+in a shorter way..
+2. where to use it... many functions written by other person expect
+function as input argument...this function is expected to ...tell
+the ready made function what to do.. 
+
+
+
+
+products = [(101, 'Widget'), (102, 'Gadget'), (103, 'Doodad'), (104, 'Thingamajig')]
+
+sorted_products = sorted(products, key=lambda x: x[1])
+
+look we are sorting some tuples.. 
+sorting needs a criteria...
+sorted utility is telling hey look tell what do you want me to sort
+, second argument on what criteria..
+
+
+
+
+
+
+print(f"Products sorted by name: {sorted_products}")
+
+
+
+
+
+
+
+
+
+
+
+y=map(doubleit,x)
+map is telling i will take each element of your list and call your function
+to get new value and that value i will put into list..
+
+
+1. lamda expression -- convenience thing...
+
+sorted_products = sorted(products, key=lambda x: x[0])
+sorting needs two things.
+1. group
+2. criteria on which you are sorting..
+criteria on which you are sorting is given key=lamda expression..
+
+sorted(student_objects, key=lambda student: student.age)
+sorted(whichds,key=lamda datatypeofyourds:what is field)
+
+x=["hello","hi"]
+filter this list if length of the string is more than 3.
+y=filter(lamdaexpression,x)
+list(y) // we should get only hello
+
+with lamda and without lamda..
+
+ for product, rate in production_rates.items():
+you get both key and value with respect to a dictionary..
+
+
+
+value < threshold for value in inventory.values()
+
+comprehension with respect to list or dictionary
+shortcut way to write syntax  for selecting each element in the ds
+and applying some logic..
+
+comprehension with any DS.
+
+1. we have a ds it contains some elements.
+2. we want to take each element from the ds.
+3. apply some logic on it..
+we are doing it with lamda expression also, now you can do with
+list comprehension.
+
+lamda expression the way we have used it..we are able to use it provided
+somebody is allowing to use it.. do you agree.
+
+There is a function whose input argument is not a function..
+can you pass lamda expressions here.
+
+filter case we passed lamda expression, because filter told hey look
+if you pass me function, i will call it.
+
+lamda expression.. 
+1. think of a ready made whose input is another function
+2. I am calling this ready made function and we are assigning and defining
+a function at the same time.
+
+X comprehension.
+1. we are picking each element from ds
+2. apply some logic (filtering, map)
+
+1. python properly
+2. heard there is something comprehension.. 
+you want to create a new ds.
+based on existing ds. applying some logic..
+
+
+1 i read from place X
+2. look at official the people tell about that topic.
+
+Task
+
+1. tasked, taskname,status,priority,location
+
+sort the array of objects..
+newlist =sorted(group,key=criteria)
+
+figuring sort and filtering on any ds is an important skill.
+
+
+1. tasked, taskname,status,priority,location
+
+create a list of tasks.( class based)
+
+figure out a logic for sorting on taskname
+sorting on priority
+sorting on location..
+figure out how to filter tasks based on location..
+
+we will make a summary
+
+1. lamda expressions --  there are two people
+person who defines and assigns function
+person who is going to call the function.
+
+2. lamda .. style of coding.
+we define the function and assing the function in the same line.
+
+3. comprehension..
+3.1 i have a ds i can pick each element from the ds..
+3.2 do some logic on it.
+3.3 hopefully create a new ds.
+
+
+if you have tasks and you want to filter some tasks based on critiera
+1. comprehension.
+2. filter function..
+
+sorting..
+restrict yourself to lists.. and sorting operation on the dictionary is
+not a relevant word to talk about..
+
+Datastructures.. keep in mind operations..
+
+Decorators..
+1. think of two people.
+
+License , passport..
+1. think of person who is going to to issue.  == X person
+2. person who is taking the licencse knows the benefit of taking the license..
+==Y person
+3. he knows when the benefit comes.==Z person
+
+Decorators..
+1 X and Z are friends..  == same compoany.
+2. Y is another person..
+
+X and Z are providers of the decorator and they give benefit
+to us when have the decorator.
+
+Y is a person who is using the decorator and he knows
+what benefit he gets and when...
+
+most of times we are users of the decorator..
+1. what benefit you get and when... I dont know this, dont touch decorators.
+
+
+do i know benefit of the below line.. I dont know.. ok dont use the decorator
+delete it.
+@app.get("/items/", dependencies=[Depends(verify_token), Depends(verify_key)])
+
+decorators can come at various levels..
+
+99.99% cases we are users of decorators..
+so as user of decorator.
+
+ask yourself the question,, what is benefit you are getting..
+when... I dont know the benefit ok dont use the decorator..
+
+you have a code.
+somebody has told i have a decorator if you use it, you get this benefit.
+now ask you like the benefit, if yes.. use the decorator..
+
+zoom out... project architecture is important
+zoom in ... being good at varibles and functions is important
+
+kids world decorator..
+who created the decorator ... I
+who is giving the benfit .. I
+who is using the decorator .. I
+so many I.. illness.
+
+standard is not great standard if I am only person using it.
+getting other people to use it.. only then standard looks great..
+
+
+1.lamda expression
+2. light story on comprehension..
+3. why decorators.. and how to use decorators..
+
+we can pass function as an input argument to another function..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

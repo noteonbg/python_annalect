@@ -2,7 +2,8 @@
 product_quantities = [20, 60, 150, 40, 90, 120, 150, 200]
 
 # 1. List Comprehension: Create a list of squares for quantities greater than 50
-quantity_squares = [x**2 for x in product_quantities if x > 50]
+quantity_squares = [x*2 for x in product_quantities if x > 50]
+
 print("List comprehension - Squares of quantities greater than 50:", quantity_squares)
 
 # 2. Set Comprehension: Create a set of squares for quantities greater than 50 (unique values)

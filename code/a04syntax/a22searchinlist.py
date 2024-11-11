@@ -7,6 +7,7 @@ class Person:
         return f"Person(name='{self.name}', age={self.age})"
     
     # Override equality to compare two Person objects based on their attributes
+    #def freak(other,person):
     def __eq__(self, other):
         if isinstance(other, Person):
             return self.name == other.name and self.age == other.age
@@ -24,7 +25,15 @@ people = [
 person_to_remove = Person("Bob", 25)
 
 # Using remove() to remove the first matching object
-people.remove(person_to_remove)
+try:
+    people.remove(person_to_remove)
+    if person_to_remove in people:
+        print("found the person")
+    x=people.index(person_to_remove)
+    print(x)
+except ValueError:
+    print("people not found")
+    
 
 # Output the modified list
-print(people)
+

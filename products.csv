@@ -1,0 +1,5 @@
+product_id,name,category,quantity,price
+1,Widget,Gadget,100,19.99
+2,Gizmo,Gadget,150,29.99
+3,GadgetPro,Gadget,50,49.99
+4,Sprocket,Tool,200,15.49
