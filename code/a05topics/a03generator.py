@@ -3,14 +3,24 @@ def number_generator(limit):
     number = 0
     while number < limit:
         yield number
+        
         number += 1
 
 # Create a generator that produces numbers from 0 to 4
-gen = number_generator(5)
+gen = number_generator(2)
+
+try:
+    print(next(gen))
+    print(next(gen))
+    print(next(gen))
+except StopIteration:
+    print("no more values to generate")
 
 # Iterate through the generator
+"""
 for num in gen:
     print(num)
+"""
 
 """
 The function number_generator(limit) generates numbers starting from 0 up to
@@ -37,12 +47,12 @@ def sensor_data_stream():
         sensor_value += 1  # Simulate new sensor value
 
 # Process the data stream
-data_gen = sensor_data_stream()
+#data_gen = sensor_data_stream()
 
-for _ in range(10):
-    print(f"Sensor reading: {next(data_gen)}")
+#for _ in range(10):
+    #print(f"Sensor reading: {next(data_gen)}")
 
-
+"""
 # Generator to read a file line by line
 def read_file_in_chunks(file_path, chunk_size=1024):
     with open(file_path, 'r') as file:
@@ -51,9 +61,9 @@ def read_file_in_chunks(file_path, chunk_size=1024):
             if not chunk:
                 break
             yield chunk
-
+"""
 # Use the generator to process the file in chunks
-file_path = 'large_file.txt'
-for chunk in read_file_in_chunks(file_path):
-   pass # process_chunk(chunk)  # Replace this with actual processing logic
+#file_path = 'large_file.txt'
+#for chunk in read_file_in_chunks(file_path):
+ #  pass # process_chunk(chunk)  # Replace this with actual processing logic
 

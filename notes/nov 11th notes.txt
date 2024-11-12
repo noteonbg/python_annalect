@@ -354,13 +354,13 @@ so many I.. illness.
 standard is not great standard if I am only person using it.
 getting other people to use it.. only then standard looks great..
 
-
 1.lamda expression
 2. light story on comprehension..
 3. why decorators.. and how to use decorators..
 
 we can pass function as an input argument to another function..
 
+Thank you..
 
 
 

@@ -1,0 +1,6 @@
+2024-11-12 17:55:04,068 - root - DEBUG - This is a debug message
+2024-11-12 17:55:04,069 - root - INFO - This is an info message
+2024-11-12 17:55:04,069 - root - WARNING - This is a warning message
+2024-11-12 17:55:04,070 - root - ERROR - This is an error message
+2024-11-12 17:55:04,070 - root - CRITICAL - This is a critical message
+2024-11-12 17:55:04,070 - my_custom_logger - WARNING - This is a warning message from the custom logger

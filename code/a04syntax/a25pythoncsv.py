@@ -41,10 +41,12 @@ def write_products_to_csv(products, filename='products.csv'):
         # Write each product as a row in the CSV
         for product in products:
             writer.writerow(product.to_csv_row())
+        
+        print("written successfully")
 
-write_products_to_csv(products)
+#write_products_to_csv(products)
 
-"""
+
 # Read products from a CSV file and return a list of Product objects
 def read_products_from_csv(filename='products.csv'):
     products = []
@@ -66,7 +68,7 @@ read_products = read_products_from_csv()
 for product in read_products:
     print(product)
 
-"""
+
 """
 to_csv_row method: This method converts the Product object to a list format that can be written to a CSV file (matching the header columns).
 from_csv_row class method: This method is used to convert a row from the CSV back into a Product object.

@@ -1,0 +1,63 @@
+import copy
+
+# Define the Machine class
+class Machine:
+    def __init__(self, name, model):
+        self.name = name
+        self.model = model
+
+    def __repr__(self):
+        return f"Machine(name={self.name}, model={self.model})"
+
+# Define the Product class
+class Product:
+    def __init__(self, product_id, name, machines):
+        self.product_id = product_id
+        self.name = name
+        self.machines = machines  # List of Machine objects
+
+    def __repr__(self):
+        return f"Product(product_id={self.product_id}, name={self.name}, machines={self.machines})"
+
+# Create some Machine objects
+machine1 = Machine("Machine1", "M100")
+machine2 = Machine("Machine2", "M200")
+
+# Create a Product object that uses these machines
+product1 = Product(1, "ProductA", [machine1, machine2])
+
+# Display the original product
+print("Original product:")
+print(product1)
+
+# ---------------------------
+# Shallow Copy Example:
+# ---------------------------
+# Create a shallow copy of product1
+shallow_copy_product = copy.copy(product1)
+
+# Modify a machine's name in the shallow copy
+shallow_copy_product.machines[0].name = "UpdatedMachine1"
+
+# Show the original and shallow copy
+print("\nAfter shallow copy and modification:")
+print("Original product:")
+print(product1)
+print("Shallow copy product:")
+print(shallow_copy_product)
+
+# ---------------------------
+# Deep Copy Example:
+# ---------------------------
+# Create a deep copy of product1
+deep_copy_product = copy.deepcopy(product1)
+
+# Modify a machine's name in the deep copy
+deep_copy_product.machines[0].name = "CompletelyNewMachine1"
+
+# Show the original and deep copy
+print("\nAfter deep copy and modification:")
+print("Original product:")
+print(product1)
+print("Deep copy product:")
+print(deep_copy_product)

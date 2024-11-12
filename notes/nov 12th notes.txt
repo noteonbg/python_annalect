@@ -1,0 +1,56 @@
+	1. ds .. list, dictionary..
+	2. lamda expression
+	3. logic part, presentation part..
+
+	we have to ensure that coding style is some what relevant to the industry.. atleast.
+
+	1. two case studies.
+	2. employee case study..
+
+	Dictionary..   key .. number employee id
+			value -- Employee object ( employeeid,firstname,lastname,
+			DateofBirth,DateofJoining,Grade, Location)
+	
+	phase i .. you should complete the logic part for it.
+	product managemenet system
+	order processing system
+
+	phase 2.
+	Employee management.. casestudy_2.docx.  logic part 
+	you should not use list to store things rather use a dictionary
+	key  number
+	value employeeobject
+
+	F:\python_annalect\code\a04syntax\a09pepstandards.py
+	all you should follow this convention only in phase 1 and phase all 3 case studies..
+	what to do. ( all 3 should stick to pep coding style..)
+	1. focus on product management system
+	2. order processing system
+	3. employee case study
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
