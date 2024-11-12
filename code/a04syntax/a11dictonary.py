@@ -53,3 +53,20 @@ else:
 # 8. Final state of the dictionary
 print("Final state of the dictionary:")
 print(my_dict)
+
+
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+
+# Key to check and add if it doesn't exist
+key_to_add = 'd'
+value_to_add = 4
+
+# Check if the key exists before adding
+if key_to_add not in my_dict:
+    my_dict[key_to_add] = value_to_add
+    print(f"Key '{key_to_add}' added with value {value_to_add}.")
+else:
+    print(f"Key '{key_to_add}' already exists with value {my_dict[key_to_add]}.")
+
+# Print the updated dictionary
+print(my_dict)

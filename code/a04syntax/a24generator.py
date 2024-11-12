@@ -14,7 +14,7 @@ def person_generator(names, ages):
 
 
 # Sample input data
-names = ["Alice", "Bob", "Charlie", "Diana"]
+names = ["x", "y", "z", "a"]
 ages = [25, 30, 17, 22]
 
 # Create a generator object
