@@ -5,14 +5,19 @@ class Product:
         self.category = category
         self.quantity = quantity
         self.price = price
+    
+    def getprice(self):
+        return self.price
 
-    @classmethod
-    def from_csv_row(cls, row):
+    
+    def from_csv_row(cls,row):
         product_id, name, category, quantity, price = row
+        """we created the object from the input got from the list"""
         return cls(int(product_id), name, category, int(quantity), float(price))
-
+    
 # Example CSV row
 csv_row = ['101', 'Widget', 'Gadget', '25', '19.99']
+#list contents belong to which data type.
 
 # Create a Product object using the class method
 product = Product.from_csv_row(csv_row)
