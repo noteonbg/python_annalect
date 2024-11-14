@@ -1,0 +1,33 @@
+create the virtual environemnt
+python -m venv databaseenv 
+, here databaseenv is name of the virtual environment.
+
+way to activate virtual enviornemnt..
+./databaseenv/Scripts/activate
+
+in visual code command prompt we can get problems when we activate
+virtual environemnt.
+
+Set-ExecutionPolicy Unrestricted -Scope Process
+
+to reset the execution policy again
+Set-ExecutionPolicy Default -Scope Process
+
+
+pip list
+to list to see installed packages.
+
+
+to deactivate virtual enviornemnt.
+pip freeze > requirements.txt
+
+to generate the requirements.txt file with the current packages in your virtual environment:
+pip install -r requirements.txt
+
+
+deactivate
+
+Isolated Environment: Keeps dependencies specific to your project, avoiding conflicts with other projects.
+Reproducible Environments: You can recreate the same environment on different machines by sharing the requirements.txt.
+
+--------------------------------

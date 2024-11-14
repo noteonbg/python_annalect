@@ -1,0 +1,208 @@
+expectation is
+
+1. we are ok writing logic.py 
+2. no changes in logic.py function input and
+output... 
+3. we are comfortable with a list and dictionary
+where list contains objects and dictionary values contain objects.
+
+heard the word called decorator.. == ask yourself what
+benefit on what it needs to be used..
+
+basics of variables and fucntions.
+variables..
+data type
+scope..
+
+Files and databases..
+
+we have an array or dictionary .
+we can write to the file
+we can write to the table in the database..
+
+what is a file..
+a mechanism to store things permanen..
+
+file handling..  -- generalize thing .. IO
+expand IO.. Input and Output
+what is IO?
+movement of data from place X to place Y
+what is X, or Y = memory, file
+
+x== memory we have not used any file.. so our data which
+we have is not persistent..
+
+we need to push data from memory to file. -- output
+we need to read data from file to memory  -- input..
+
+network programming  == IO == memory to memory
+
+i am doing IO
+1. what is your x
+2. what is your y
+3. what is your format of data.. ( text, binary)
+
+text file does not need interpretation..
+binary file needs interpreatation, some application s needed
+to interpret its content..
+
+while writing to file you write in chunk of bytes.. taht is
+called binary mode of operation
+
+written --10 bytes, 23 bytes, 300 bytes. -- binary operation
+
+
+if you write character by character it is text based operation
+234ab eg  --text file operation at work..
+
+common text file .. csv file..  (comma separated files)
+
+
+logic.py  --function of the class, with self
+writetocsv  
+you take the dictionary or list and create a file 
+readfromcsv(input file)
+read from csv file and then you populate youir array
+or dictionary..
+
+Database .. database intenrally stores things as a file
+but still we prefer to use databases in most of the projects.
+why..
+
+database.. physical and logical independence of data.
+
+sql databases
+EF codd
+
+1. all data should be stored in a concept called table.
+2. there must be a standardized language to deal with it.. SQL
+3. each row must be unique.. identified by a primary key..
+...
+
+why table..
+if you have a table.. 
+emp (empno, empname, deptid)
+we add some rows into it
+we change the table.. to add additional column called location.
+old data is not lost.. if you were writing to a file in binary
+mode, this would be lost..
+
+we have to have a database.. superset.. 
+inside database we can multiple tables.
+learn some sql
+insert, update, select.. where you get one row, where you
+get multiple rows..
+
+what is logic we have..
+1. we have some object with us.. from where ( List, Dictionary value)
+2. now represent that as a , separated value.. where,
+in some function of your projectspecifc data type class.
+product, Task,order..
+
+when i look function definition, i will ask who is going to call it.
+
+in your model or project specific data type 
+Task
+Product
+Employee
+Order, Product
+
+have a object specific function(self) -- which converts
+your object into a comma separated values..
+
+have a general function which can take a list and get
+your an object..
+
+
+
+dictionary, list...
+
+we are talking about csv file..
+
+1. we have a class with us..
+2. we have our object with us of that class..
+3. i want to write..
+take your object and convert the object content into a list
+of values..
+open the file.. and use the method writerow...(input argument
+for right row is a list)
+4.I want to read..
+have a function in your class, which will take a list
+and convert that into an object which you are expecting..
+doubt
+csvpoc.py
+dont create multiple files..
+
+create a class called Emp empno, deptid
+write functions .
+
+create one object of emp
+write to the file as csv.
+and then read from the file and then ensure employee object
+is created.
+in a04syntax...a25pythoncsv.py..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+decorator and generator..
+some syntax fillers... 
+
+
+
+
+
+
+
+
+
+
+
+
