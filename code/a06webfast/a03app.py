@@ -47,3 +47,15 @@ def divide(a: int, b: int):
             detail="Division by zero is not allowed"
         )
     return {"result": a / b}
+
+    '''steps
+
+    python -m venv fastapi
+    Set-ExecutionPolicy Unrestricted -Scope Process
+    .\fastapi\Scripts\activate
+    pip install fastapi uvicorn
+
+    
+
+    
+    '''

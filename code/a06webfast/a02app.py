@@ -56,6 +56,8 @@ def perform_subtraction(numbers: Numbers):
 2. change to the project folder.
 3. create a virtual environemnt.
 python -m venv x #x can is proper nown you can keep it whatever you want..
+Set-ExecutionPolicy Unrestricted -Scope Process
+
 4. activate the virtual environemnt
 #venv\Scripts\activate
 5. install the library for fastapi

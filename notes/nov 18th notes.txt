@@ -1,0 +1,452 @@
+in the last class. we did see that we covered some basic in database..
+
+1. logic.py cannot be changed in terms of input and return type.
+2. the body of the function.. what you write inside def that changed.
+becuse .. now we are dealing with ds rather we are dealing with databse..
+3. when you database functions..
+
+1.insert
+2. update
+3. single select
+4. multi select..
+important thing is take care of both the positive and negative scenarios..
+
+problem statement.
+
+1. logic.py
+2. project specific data type, Task, Product, Order..
+3. database part.. you will have functions.. 
+
+I want to do fastapi.. fastapi is English, relax...
+
+1. are you clear about the logic.py... yes.. ok..
+2. is your database part ready.. yes/no... but any way see you complete it
+or not... 
+
+what is fastapi..(English)... generalize it... web services.
+
+we have logic.py functions working.. ok services are working..
+can these services be called by using http. answer is no..
+hence it is services, but not web services.
+
+Now i wnat to make it web services..
+why web services.
+1. my service function should be called by different people using different
+programming langauges..
+2. my service function needs to be distributed... 
+
+how to implement web services.. in python use fastapi library.
+	in java i will spring framework
+	in nodejs i will use requests library..
+	in programming x, i will use y library
+
+everywher you want to use a web servies, you must some library...
+
+quick summary
+remember the alphabets... first comes Y
+Y is dead, focusing on X or focusing on Z.. great mass funeral at work..
+why put web services.
+chocolate cover  comes..  any programming language guy can call the function
+it is distributed... run logic.py in system1, calling of logic.py functions via
+the wrapper can be done from any other system...
+
+IT industry and Biology are two fields where language usage is very very liberal..
+in physics and chemistry language usage ismeasured.. so there is accuracy..
+
+
+APi api.. web services..
+I want to build web services.
+which library are you planning to use.. where.. everywhere in java, in python, in nodejs
+in c++..
+
+what is json.
+1. standard for representing variables.
+standard
+java guys accept
+python guys accept
+.net guys accept.
+
+what is web services..
+it is calling of functions via http and representing the variables in a standardized
+format like json..
+
+in every programming language you will get ready made function that convert.
+
+language specific thing to json
+json to language specif thing..
+json is a string.
+
+language object to json
+json string to language object..
+
+
+
+what is web services.
+
+1. a mechanism to call the service function
+1.1 in a distributed way.
+1.2 in any technology..
+
+2. how is it possible..
+2.1 standard like http and json.
+
+http ..
+1. presentation
+2. for making web services
+
+
+http basics.
+1. you should make request only then you will get response, most of times..
+
+person who does not know when a request is made, what response comes
+is in comma state in http.
+
+when make request. there are modes.
+get
+post
+put
+delete
+
+modes of request... events in http protocol request.
+event ... the mode of request will be detected by the browser and we can write functions
+in our fastapi.. telling.
+
+1. if this is the URI. ( some way to locate the function)
+2. if this is mode of request.
+3. here i write a function that should be called by fastapi.
+
+
+@app.get("/freak_ok_junk")
+def sum_query(a, b):
+
+hey while making the request..
+http://localhost:8000/freak_ok_junk .. this is URI 
+
+1. URI 
+2. mode of request..
+3. 
+
+whose logic functdion is not returning, try delete the folder itself..
+
+
+I want to write a fastapi function.
+
+1. which logic function you plan to call. 
+2 I want to call the logic function addproduct...
+2.1 what is its input
+2.2 what is its output
+2.3 how do you know success or failure.
+3. in your fastapi.py file
+write a function.. whose input argument is matching the logic.py argument..
+4. in your fastapi functions.. input needs to be picked from http request..
+5. inside yoru fastpai function call the logic function, logic functdion will return
+some x. that x make it as return via http response..
+
+there are multiple steps.. we have a choice.. 
+1. act like a hero and trust our memory.. and think I can "remember" which usually
+is pathetic..
+2. operate thru a checklist... (I would prefer this, because this will give me repeatability..)
+
+1. create a new folder .. called fastapipoc.
+2. write a logic.py.. which has got a function called nextnumber whose input is
+a number and returns the next number..   +1
+
+virtual environment..
+1. we have a project. we want a need for using some libraries in our project.
+we can ensrue these libraries are used only for your project and we want to add
+these libraries into python software in general.
+
+
+create vritual environment called 
+python -m venv ws
+.\ws\Scripts\activate
+
+opinion... what is not an opinon virtual enviornemnt.
+how to activate virtual environemtn
+
+tool way
+command prompt
+visual code terminal...
+whatever is teh case ensure 
+
+
+pip install fastapi uvicorn
+
+is a good example of where we need more patience than intelligence..
+
+in any library usage, we need patience to figure how to make it work.
+module you can have multples
+
+folder
+
+ws.py
+logic.py
+in logic.py create a function called def rs():
+ 					return {"hi":"world"}
+
+in logic.py do you have a function which takes a number
+and returns a next number..
+
+
+
+simplest.. for that print line to appear
+the function has to be called, function wsa not called
+when you ran that uvicorn  python -.. you start the fastapi
+erver function was not getting called.
+
+why was the function not getting called..
+event did not occur..
+
+all your fastapi functions are event driven functions..
+only when the event occurs function will get called
+not by us.. it will get called by the system, when it detects
+the event has occurred.
+
+who will call the fastapi functions..
+most stupid answer is we..
+
+old day 1 story.. when you define a function
+think who is going to call it.
+
+thru postman or thru the browser which is pathetic..
+
+fastapi function is called by the framework when it detects
+that the event has occurred..
+our job is to define the function calling will take
+palce by system when the event occurs.
+
+if your fastapi function takes some input...
+fast api, normal function using the fastapi decorator..
+
+
+if i write
+@app.get("/abc")
+what is meaning.. we are telling fastapi hey..
+when some body makes a  http request in get modell. with the uri abc
+let me know... call my function.
+
+I forgot to write @app.get("/abc")
+then no runtime error you land up with logical error..
+you are telling I wrote a function, I will call it.. you dont bother..
+ok fastapi tells ok.. i wont bother..
+
+if you dont write @app.get("/abc").. we have not registered
+for the event.. if you have not registered you wont get intimated for
+the event.
+
+all your fastapi functions are event registrations..
+ie you register and tell 
+1. if this is mode of request , get, post.
+2. if this is uri
+3. call the function.
+
+
+@app.get("/sum_query")
+1. if mode of request is get.
+2. if the uri is sum_query
+3. call this function...
+
+the function is taking take two inputs ,def sum_query(a,b):
+how will the input come.. telling it will come from postman ook...
+it needs to be supplied as a part of http request.
+
+
+any input which is taken via the fastapi functions needs
+to be picked up from http request.
+
+http request. you pick up information usually 
+
+1. path variable.
+2. parameter
+3. request body
+
+who decides we programmer as we write fastapi function should decide
+how input is pickup..
+
+
+our job is first to get comfortable with this 3..
+
+
+
+4. other ways.
+
+write a function called  wp in ws.py
+its input is a n.
+pass this n to the logic function, get the next number
+and return the result as { "result":resultyougotfromnextnumber}
+mode of request is get.
+input should be picked up via query parameter.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+there are sometimes when server can push data to the client..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+web --this is second  
+services. pick this one.. first  ==Y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
