@@ -1,0 +1,246 @@
+what was csv writing and reading all aabout
+it is about other person design..
+
+we should be clear what is one row of the csv file
+which object it corresponds to...
+
+patientid,patientname,doctor,lastvist --
+reading the line from cvs reader.. list of individual
+values..
+
+this list of value needs to get converted into a patient
+object.. 
+
+all the above to reading reading the csv file
+
+writing the csv.
+1. you have a patient object with you
+2. you have to convert this into list of individual values..
+3. you have an object and you have convert, you need
+self
+4. writing to the csv file..
+
+
+
+database
+flask --web
+fastapi
+sqlalchemy
+no where the logic.py  is going to change..
+
+database..
+we are not the first person in the company to get
+connected to databse in particular language.. (x =python)
+so find out what is way the company gets connected
+to the database and imitate,, no I will go to google
+and find out... pathetic way.. and waste of time
+
+usually in a project database part of the project
+is easiest thing in the project..why most of code
+is very generic... 
+
+database server... runs on a  particular portno
+database 
+we have to show that we have reached a particular
+database in the code..
+
+unchanged for last 40 years..
+1. first prove you have connected with the database.
+2. think of what sql command you want to issue
+3. collect data from the variables in your code
+to the sql command.
+4. issue sql command and get feedback.
+find out success, find out failure..
+5. tell ok databae i am done with you..
+
+ever since 2000 we have a relatively easier way
+called ORM approach.
+database table and map to a class and you deal with
+the class by 
+
+
+
+
+
+
+three things about database would be.
+
+1. relax this is easiest part in the project.
+2. you can think of this after knowing logic.py is clear..
+3. we are going talk to the database by using sql command.
+but there is a shortcut available sqlalchemy..
+4. how to connect database in a programming lanauge dont
+go to google... in a project ask the team hey show me
+what is your way to get connected to the database..
+and imiate it first..
+
+which databse.
+does it need any extra library..
+how are we going to view the database..
+
+we are dealing with database by using sqlalchemy
+or raw sql commands being issued, it does not matter
+we should know database concepts.. first..
+
+why database..
+
+create a table.. x --DDL command 
+drop table x..
+if i want it to be back.. commit or rollback.
+
+what is secret song that projects sing..
+"I will change"
+
+"create a row in a table"
+
+product
+id,name,price,category,expirydate,batchid
+insert into product values (1,'A',3)  --it was working
+yesterday today it will fail
+
+insert into product(id,name,price) values ( 1,'A',3);
+
+any sql command that fails should never be because of syntax it should be beucase of concept.. or logic..
+
+if we type wrong sql syntax or wrong column name.
+and get into runtime error , it is pathetic..
+if you have  doubt on syntax of sql why are trying
+it out thru python.. why dont try directly at the sql tool
+level..
+
+when does insert command fail.. practically
+when constraints get violated, primary key.. 
+
+update command fail.
+when where condition fails or constraint fails.
+update product set qty=-1 where productid=100;
+
+select command... condition failure..
+how you will interact with database outside python
+how you will view it, the company has to take a call
+and tell every one in the project team these are tools
+wea re using..
+
+
+a05topics folder\a13db.py
+run it and see whether it works.
+open the database and see whether table exists
+and row exists
+add a row in the table via  dbbrowser..
+come to the code.
+comment creation of table, insert. focus only
+on selecting rows...
+ensure the row you inserted in the db is visible in python.
+
+
+in same code. 
+
+user object and insert the user object 
+into the table.
+convert the user object into a tupel
+insert.
+
+take each tuple in the select.c
+crreate   a user object
+add that to a list.
+and then show that list in the console.
+
+
+create three files
+user.py
+db.py
+three functions
+adduser input is user object return type is Boolean
+getallusers, no input, return all users in an array
+cleanup
+close cursor and database and return true.
+
+logic.py
+three functions
+adduserlogic
+call he add user of db from here.
+and return whatever it returns
+
+getalluserlogic
+call the db getallusers and return whatever it returns
+
+cleanupresources
+call the cleancode of db and return.. whatever it
+returns.
+
+test the logic functions,
+
+a14db.py understand the code..
+break into db.py
+logic.py
+think what is equivalent of user.py...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
