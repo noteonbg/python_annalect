@@ -1,0 +1,345 @@
+we can only feel sorry for people who have strong opinions on subjective things..
+== zero technical skills.
+
+
+if logic.py is not working, then there is no question of thinking about fastapi.
+if we dont write the fastapi.. functions then two things will happen our logic.py
+
+1 . people from other technologies cannot call our function written in logic.py
+2.  the calling code should be in the same system as logic.py funtions are present..
+they will not be distributed..
+
+web services..
+1.  we are calling our functions in fastapi. by reacting to events in http.
+2. when we are telling I need these parameters.. for my function in fastapi
+those parameters needs to be picked up from the http request..
+
+when we pick up parameters there are multiple ways..
+1. query parameters.. http://localhost:8000/gp?productid=1
+2. path variable.    http://localhost:8000/gp/1
+3. we should know how to read the information from the request body..
+
+by default server sends information to client in what mode.
+response..
+
+client sends information to server.. request modes.
+get
+post
+put
+delete.
+
+not knowing answer is ok
+but answering stupid question is another level of skill
+
+remember chocolate should be ready only then think of wrapper..
+I have nothing in my logic.py ok dont write any fastapi.. it is not worth
+i will write fastapi and then do logic.py..  various way to be stupid this is one way..
+
+what is our current focus..
+1. can you read input from http request using various modes.
+2. can you send response first with just data  and then data + http status codes.
+
+read inputs from http requests.
+sending response ( your data + http status codes)
+
+let us prove input is coming correctly and necessary output comes..
+later on we will how to validate the input..
+
+ever since dinosaur was programming never trust if somebody tells I understood
+the problem.
+not solving the problem is ok as long as we prove thru data we understood why
+the problem is coming..
+
+there is no function to handle the postevent.. 405
+
+
+
+
+
+
+
+
+https://www.cleartrip.com/flights/results?adults=1&childs=0&infants=0&class=Economy&depart_date=11/12/2024&from=BLR&to=IXM&intl=n&origin=BLR%20-%20Bangalore,%20IN&destination=IXM%20-%20Madurai,%20IN&sft=&sd=1732014601299&rnd_one=O&isCfw=false
+
+
+curl --request GET \
+  --url https://api.aftership.com/tracking/2024-04/trackings/id 
+  --header 'Content-Type: application/json'
+
+
+hopefully people know how to take inputs via request param and via path variable..
+
+write a function in logic.py which will take two numbers as input..
+return type is number logic is multiply the two numbers..
+
+fastapi.  -- lprod.py  wprod.py
+1. write a function ...
+2. first number input should be taken via pathvariable.
+2. second number should be taken via requestparam.
+3. return type of this function is a dictionary.
+{ message:"success", "result": 6 }  --
+if any of input is zero..
+{ message:"input was zero "}
+once you are done let me know
+
+so far I was trying to keep the college students to be happy what is proof.
+i discussed only int,  welcome to objects..
+
+1.  add product
+2.  update product
+3. view all products
+4. apply discount
+
+
+logic part..
+1. what is input you are taking
+2. what is output you are getting
+3. based on the output how do you failure or success.
+
+
+fastapi function
+def fastapiproductadd(newproduct)
+
+
+return true or false is not a great skill in fastapi, returning dictionaries 
+is better option because json format is a dictonary format..
+
+programmers who are not conscious about what is data type of the variable
+are comma state programmers.
+
+
+
+
+
+
+
+
+input argument in the logic.py for addproduct.
+
+1. product object.
+2. return type of add product ... 
+
+if you are writing fastapi functions..
+dont jsut return data return data + http response status codes..
+
+
+if your logic.py requires X as input
+and returns Y as output..
+
+yoru ws.py also requires X as input
+and must return y as output..
+
+ws.py is a slave to logic.py
+
+
+
+
+
+when you wrote the ws.py function
+we should be conscious what is input type we are taking and how...
+how..
+1. path variable
+2. request param
+3. body...
+body of the request.. will be empty if mode of your request is get...
+so it cannot be get... it should be something else...
+
+
+all are events in http request
+get  --for querying..
+post  --for adding
+put  -- for updating
+delete-- for deleting..
+
+convention is what we do is.
+
+is there any harm if somebody name is called 1234.
+
+add a product... post  
+update a product ... put 
+getallproducts -- get  
+applydisccounts -- put 
+
+is there anything wrong in get..usage everywhere.. from functionality point of view
+no.. but how you write the code will change. get will not have a body according to http
+specs.. 
+
+
+
+
+
+
+
+
+
+
+
+
+whether it is get , post, put or delete what we are doing in our code.
+
+we are telling hey fastapi.. 
+
+look i have written this function, this function you should call when
+mode of request is "X" and URI is "something"
+
+we are starting we will stick with convention..
+
+how do you know you are dealing a new born baby.. baby will scream frequently
+one word called "security"....
+security is both process and technologyand we should insult it as only technology..
+
+convention..
+1. get query
+2. post, adding
+3. put updating
+4. delete deleting
+we will stick with this...
+but remember all these are just events in http request.. we write function
+which should get calld during which event..
+
+what are we doing now..
+we want to read objects as input and return objects as output.. and not int types
+like what we did so far..
+
+when you returned... we just returned data... instead of returning just
+data ( data + http status codes) 
+convention is people expect the web services function to return http status code+
+data.. why... front end... react or or in some other application.
+
+
+what is zoom in summary
+1.  learn to take object as input from http request.
+2. while returning dont just return data + http response status codes.
+
+
+web services .. you data needs to get converted into json
+json needs to get converted your object..
+
+class A
+class B
+if you tell I will create object of B.
+B should access all features of A and all of features of B... inheritance..
+
+
+when we are new to web services program
+being happy reading int thru request param or path variable is not great...
+we should learn to pick up objects from http request.. that is what we are focusing on..
+hwo the object should be created and passed... depends on framework usage..
+
+fastapi..
+
+whatever normal classes we have as of now we have trouble figuring out how to
+read thse objects from request and send those objects via response..
+
+
+run a07.....py
+run a08.... py
+
+you have to read objects from http request.. now you have to see
+what framework prefers.. if frameworks prefers a pydantic class. then
+you should write that and then be in a position to convert the pydantic class
+into your normal python class if need be..
+
+we created a class called Rectangle.. 
+were we able to read rectangle object from the http request.. yes or no..
+
+7.30PM
+
+we should leanr how to write pydantic classes for product, order
+and we dont want to touch logic.py
+
+
+we want to write web services for problem statement 1..
+
+1. logic.py is working
+
+2. you are clear aobut input and output..
+
+3. write  the web services function for problemstatement 1..
+
+write a pydantic class called Product
+inside it, it will have productid, price , name..
+create 4 functions..
+post mode of request
+createproductws(input argument product object)
+return true
+put mode 
+updateproduct(input rgument product object)
+return true
+get
+getallproduct (nothing ) return type is List of product
+return one element list of product
+put mode
+applydiscount(discount:int) --List of products
+return one element list of product.
+
+ps1ws.py
+
+
+misery is created by people who write everything at once..
+
+1. logic.py should be working.. ps1 it is working...
+2. web services.py
+did my take my input properly from http reqwuest.
+whatever i am returning is it goimng as a response..
+3. linking logic.py with my webservices.py.
+if get trouble reading input from http request or whatever data we are sending
+via http response... it is pathetic because it means we did not step 2..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -26,8 +26,17 @@ class PA:
 # Initialize FastAPI app
 app = FastAPI()
 
+@app.post("/poc")
+async def poc(pa):
+    print("hope this works")
+    return pa
+
+
+
+
+
 @app.post("/calculate", status_code=status.HTTP_200_OK)
-async def calculate_pa(rectangle: Rectangle):
+async def calculate_pa(rectangle):
     try:
         # Validate the rectangle dimensions
         rectangle.validate()
@@ -36,8 +45,8 @@ async def calculate_pa(rectangle: Rectangle):
         area = rectangle.length * rectangle.breadth
         perimeter = 2 * (rectangle.length + rectangle.breadth)
 
-        # Create a PA object to return
-        pa = PA(area=area, perimeter=perimeter)
+        
+        pa = PA(area=area, perimeter=perimeter)# we are creating an object of the class PA
 
         # Return the PA object as a dictionary
         return pa.to_dict()
