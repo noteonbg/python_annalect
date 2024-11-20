@@ -21,12 +21,12 @@ async def create_item(item: Item):
     return {"message": f"Item '{item.name}' created successfully!", "status_code": 201}
 
 # Route for 400 Bad Request (Client Error)
-@app.post("/bad-request", status_code=status.HTTP_400_BAD_REQUEST)
+@app.post("/bad-request", status_code=status.HTTP_406_NOT_ACCEPTABLE)
 async def bad_request(item: Item):
     if item.price < 0:
         raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Price must be a positive value."
+            status_code=status.HTTP_406_NOT_ACCEPTABLE,
+            detail="inputs cannot be zero."
         )
     return {"message": "Item is valid.", "status_code": 200}
 

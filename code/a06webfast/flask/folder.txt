@@ -1,0 +1,15 @@
+flask_product_app/
+│
+├── app.py                 # Main Flask application (where routes are defined)
+│
+├── templates/             # HTML templates for rendering the pages
+│   ├── index.html         # Home page showing the list of products
+│   ├── create.html        # Form to create a new product
+│   ├── edit.html          # Form to edit an existing product
+│   └── 404.html           # Custom 404 error page
+│
+├── static/                # Folder for static assets (CSS, JavaScript, Images)
+│   └── css/               # Custom CSS files (if any)
+│       └── style.css      # Custom styles for the application
+│
+└── requirements.txt       # List of Python dependencies (Flask, etc.)

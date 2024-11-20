@@ -22,7 +22,7 @@ async def calculate_pa(rectangle: Rectangle) -> PA:
     # Validation for positive dimensions
     if rectangle.length <= 0 or rectangle.breadth <= 0:
         raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
+            status_code=status.HTTP_404_NOT_FOUND,
             detail="Length and breadth must be positive values."
         )
     

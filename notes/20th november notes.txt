@@ -1,0 +1,106 @@
+1. our logic class is ready, db part is ready..sqlachemy..
+this has nothing to do with fast api.
+
+2. we should have clarity in terms of which function
+of logic.py are we writing fast api for..
+input arguments and return type is getting fixed for the fastapi
+function by logic.py..
+
+logic.py returning x.
+fastapi. we cannot return y. we will return x+ http status codes..
+
+1. number based returns from fastapi
+2. object based returns from fastapi function ... 
+addproduct
+updateproduct
+listproducts
+applydiscount
+
+
+when your product update for add function returns false.
+in web services function..
+then compare it throw an exception.. 404. 
+
+in your fastapi code...
+
+2,3 ==6 
+
+
+if a==0 or b==0
+   raise HTTPException(
+        status_code=status.HTTP_406_
+        detail="Internal server error. Something went wrong."
+    )	
+
+
+problems1 webservices .py
+@app.post("/bad-request", status_code=status.HTTP_2)
+default status code 201
+addproduct
+
+
+default status code .?
+updateproduct
+
+if you get false from the logic.. throw HttpException 404, product not found
+
+
+
+
+status code 200
+viewallproduct
+
+status code 200
+applydiscount
+
+keep your bp level normal go systematically get chocolate ready before
+you think ..
+
+this program should work logic.py db.py and empweb.py
+Employee  - empno, empname, location, deptid.
+
+we need to get employee if given a employee id. 
+we need to update an employee deptid, location , ..
+we need to see all employees
+we need to see all employees based on location.
+
+you must write one py to prove that your logic.py was working
+
+once you are back continue the program if done let me know...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
