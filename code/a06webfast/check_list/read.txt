@@ -1,0 +1,16 @@
+pip install fastapi uvicorn sqlalchemy sqlite
+
+run the program
+uvicorn app.main:app --reload
+├── app
+│   ├── __init__.py
+│   ├── main.py
+│   ├── models.py
+│   └── crud.py
+└── requirements.txt
+
+models.py: Contains the SQLAlchemy models for the task.
+crud.py: Contains the CRUD operations.
+main.py: The FastAPI app, including the API endpoints.
+
+

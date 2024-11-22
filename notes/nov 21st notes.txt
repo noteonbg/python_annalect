@@ -1,0 +1,176 @@
+Today story..
+1. light weight ..logging.
+2. more important SqlAlchemy
+3. library called requests..
+
+
+we did database by issuing sql commands
+and using some library functions we did
+insert
+update
+single select
+multi select.
+with the table of the database.
+this is one approach of talking with database.
+
+ORM approach.. -- superset..--another way to interact
+with the database... usually considered simpler when
+compared to whtever approach we tool earlier.. but
+you should trust... rather you should practice and check..
+
+expand ORM = 
+Object  == class 
+Relational   == table
+Mapping   == you write a class in language X
+and map to the table called Y in the database..
+then you use some library that library
+will help you in dealing with Y while you are
+dealing objects written in X.
+
+what is sqlalachemy
+sqlalchemy is  product which will help in doing
+ORM .
+what is ORM.
+dealing with the database via classes..
+dealing with relation's by using objects.... 
+it helps in mapping tables to classes..
+this is 
+
+Abstraction.
+Sqlalchemy gives better abstraction when compared to using
+raw sql while dealing with database..
+
+python gives us better abstraction when compared to C++ or java
+hopefully...
+
+SqLLite by default
+if we get connected with a thread t1.. it will allow connnections
+only in the thread t1
+
+if some other thread called t2 comes tries to access it
+does not allow. we want to stop this behavior of sql llite
+hence we told 
+
+any technology provider wants people to use the technology
+so he will provide two things.
+
+1. user guide  == people who learning should prefer this
+2. documentation  == to know about a function or a class.
+
+all frameworks are other people opinions..
+
+230 volts 50mhz
+
+
+design patterns..
+generalizing commonly used scenarios..
+
+factory is a design pattern..
+object pool  -- if something is expensive to create at runtime
+you precreate it and keep it and give as when need is required..
+object pool
+
+
+
+
+
+focus on implementing 
+by using sqlalachemy..
+no web service
+logic.py
+db.py
+employee.py
+
+
+
+
+
+
+	today we sqlalchemy
+	class to a table..
+
+	logging.  -- to used as part of coding to leave traces
+	what happened to our program.
+
+	as we keep coding we should keep doing logging.
+	requests library
+
+	I am coding, I am logging also...
+	I have trouble now, then I will log, pathetic..
+	Logging and debugging.
+
+	fasapi functions.. you called from postman..
+	requests library...
+	
+	practice sqlachemy... how are you mapping classes and tables..
+
+	database.
+	sql way
+	orm way..( you should pick this() --lines will of code will
+	reduce
+	
+	Thanks a lot
+	
+
+	
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

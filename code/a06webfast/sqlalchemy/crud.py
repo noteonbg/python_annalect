@@ -1,13 +1,13 @@
+# pip install sqlalchemy
+
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Step 1: Define the Database URL (SQLite for simplicity)
 DATABASE_URL = "sqlite:///./products.db"
-
 # Step 2: Create the SQLAlchemy engine
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
-
 # Step 3: Create the Base class for the models
 Base = declarative_base()
 
@@ -32,9 +32,11 @@ Base.metadata.create_all(bind=engine)
 
 # Step 7: CRUD Operations
 def create_product(db_session, name: str, description: str, quantity_in_stock: int):
+    
     db_product = Product(name=name, description=description, quantity_in_stock=quantity_in_stock)
-    db_session.add(db_product)
-    db_session.commit()
+
+    db_session.add(db_product)#insert
+    db_session.commit() 
     db_session.refresh(db_product)
     return db_product
 
