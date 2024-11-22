@@ -1,4 +1,5 @@
 def adder(*num):
+    print("\n 2 Data type of argument:",type(num))
     sum = 0
     
     for n in num:
@@ -11,7 +12,7 @@ adder(4,5,6,7)
 adder(1,2,3,5,6)
 
 def intro(**data):
-    print("\nData type of argument:",type(data))
+    print("\n 1 Data type of argument:",type(data))
 
     for key, value in data.items():
         print("{} is {}".format(key,value))
