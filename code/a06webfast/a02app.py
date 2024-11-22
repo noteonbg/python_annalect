@@ -37,10 +37,8 @@ input in post request body...
 
 '''
 
-
-
 # Route to add two numbers
-@app.post("/add")
+@app.post("/add") #causing the event no,, registring for the event , event listeners..
 def perform_addition(numbers: Numbers):
     result = add(numbers.a, numbers.b)
     return {"result": result}

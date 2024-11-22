@@ -1,0 +1,401 @@
+logging.. this is important..
+
+we cannot display functions, like print..print you have
+to remove it from the code
+
+logging, unit testing, how database is configured, security
+these topics not worth going to google.. trying to find
+in the project how it is done imitate it first..
+logging..
+
+main advantage of logging when compared to use print
+function.. is
+
+1. configure the logging.
+2. theory.
+2.1 log object.
+2.2 levels of logging.. 
+
+identify important functions.
+1. log that could get into the function
+2. log input parameter.
+3. log the return type...
+when a function fails if we collect data from 1 to 3.
+this can be used in debugging..
+
+logging and debugging.
+
+1. logging level.
+2. formatters..
+3. handlers where all the log messages needs to go..
+various handlers. --destination where you message is going to go..
+
+
+bad approach
+1. i am programming, i get trouble then i use the logging
+==bad intent..
+
+correct approach
+1. writing the code as a part of it you will start using
+logging.. .. when code fails we need to have data why it failed..
+
+
+in a system, failure and success is multi factor..
+
+project success = process * technology * tools * culture..
+
+ok let me what is logging process followed.
+if they x,y,z we also follow xyz.
+
+ghost... software is giving lot of problem
+if you have logged the messages, you can open the log file
+and see what is prolem.. 
+it could same problem which is occurring at multiple times
+it can be different
+
+logging
+1. do we have "culture" of logging as we keep coding.
+2. why not use print instead of logging, in the code you will forced
+to remove print..if you use logging we can disable the message
+be shown by changing the log level.
+3. print is always tied to the console.. logging. handlers
+can be file or console or email...
+
+web scrapping..
+web application..
+1.makeup--flask
+2.cover for the chocolate
+
+look at web function what it returns..
+1. if it returns view + model ( web for presentation)
+example index.html and in that dictionary called abc is sued.
+dictionary abc is the model
+index.html is the view..
+
+2. if your function returns only model and no view
+choclate wrapper is being created. web services.
+
+when somebody uses a jargon called "X"
+1.X is related to the project. architecture
+2. X is related to the code.--coding
+1.tell to me about it in context of variable and function.
+
+generator.
+1. on need basis getting a value..
+on need basis you can get the value..
+
+
+generator
+on need basis getting a value
+if generator runs out of values, StopIteration exeption
+will occur.
+
+logging
+generator
+how to recognize web for makeup , web as chocolate cover.
+web scrapping ok road side story.. 
+
+
+
+windows os -- I WILL USE PIRATED VERSION OF WINDOWS, I WONT USE LINUX
+Linux  CAN SCREAM 100 TIMES THAT LINUX IS GOOD... IT IS USER
+FRIENDLY... 
+
+ENTERPRISE WORLD...WINDOWS CAN SCREAM I AM GOOD, BUT NOBODY
+WILL USE WINDOWS IN ENTERPRISE SOFTWARE, BOSS IS STILL LINUX ONLY..
+
+python never believed in OOPs concept from day1..
+later on lot of people cried and told python you must have oops
+so python did some cherry dressing of oops..
+
+those who tells oops is not good are not conscious people..
+most of the python projects.. class has to be looked like a data type
+or C style structure..
+
+inheritance..
+when in doubt dont use it.
+
+English may look good, but technically it can be scrap..
+
+There is a mobile
+There is a battery
+so mobile needs a battery, so mobile needs all features of the battery
+so let us make
+
+those who use the word base class and derived class are clearly
+telling they dont like oops.
+
+
+pathetic.. this is not an example...
+battery as a super class
+mobile as a subclass
+
+when in doubt dont touch inheritance also..
+
+inheritance is making hierarchies...
+hierarchy making requires lot of intelligence...
+
+why we make hierarchy.
+we want to generalize things..
+
+
+IPAddress. --super class
+Ip4Address --subclass
+Ip6Address
+
+kids like arithmetic adults like algebra
+
+you want to use inheritance first thing..
+1. super class name (X)
+2. subclassname (Y)
+put i "is a" test... between y and x
+Y "is a" X  
+Y  == GraduateTrainee
+X == Employee
+
+
+Account
+accountno feature
+mobile no enw feature
+pan card
+
+SavingAccount derived lass
+rate of interest
+
+CurrentAccount derived class
+type of company
+
+
+
+
+
+base class
+	f1
+
+
+derived class
+	f1
+
+why...
+derived class object does not like the f1 given by base class.
+hence write the f1 in derived class.
+why it does not like.. function may be insufficient or irrelevant..
+doing this concept is called as overriding.
+
+start with syntax.. is a problem..
+interface   --standard --usb  ==standards you cannot tell it is secret
+contract..
+
+self.... will be present in classes and never in interfaces
+
+
+
+ class. --product
+
+
+class vehicle  base class.
+   def   reverse()  ( push back }
+class twowhleer derived class
+
+	
+class car   derived class
+   def reverse() { apply reverse gear}
+
+class Aeroplane derived lass.
+    def reverse()  {  }	
+
+any field with the absence of standards shows that field is a kids
+field. ==product
+
+
+
+standards show that the domain is a adults domain..==design an interface
+
+we never create an object of interface, because standards cannot be
+used as it is..
+
+class is implementing interface
+class is a realizing the interface
+
+
+overriding
+
+cloud == availability of resource on demand.
+
+resource 
+software
+hardware
+
+
+
+
+
+
+
+
+
+
+science means getting theory right.. and not just doing practicals..
+
+
+
+
+
+requests library...
+
+1. mechanism to make a http request in python code and obvioiusly
+get  response..
+
+who created the web service   I
+who is calling the web service I
+kids world.
+
+who created the web service   razorpay
+who is calling the web service we ... we need reqwuests library
+to be used in python..
+
+pip install requests library.. virtual environemtn here web services
+are running.
+
+phase 1
+1.a02app.py file is present.  --run this web service
+2. webscrapping.. requests1.py --call this program and see whether
+you are getting the output.
+
+1. requestssimp.py.. and make changes to the code
+to call your web services function..  employee
+prove you know requests library..
+
+phase 2..
+use logging instead of print..a05topics\a08logging.py
+
+
+
+1. employee
+2. problem statement 1
+3. problem statement 2
+
+1. sql db
+2. sqlalchemy
+3. fastapi.
+
+
+
+dictonary.py
+logic.py
+db.py
+
+coming Thursday.. -27th nov 2024
+
+employee
+problem statement 1 
+probem statement 2   (in case you have not done it ignore it)
+
+casestudy2.docx 
+
+1. login
+2. search option how many functions you write you take a call on it.
+3. view particular employee
+4. editing a particular employee
+5. upload file... ( if you upload a csv file that should go 
+and sit in the table ) -- uncertain part..  -- atleast use databse part
+and try to complete it
+
+sqlalachemy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+both of them told they have account...
+what they have SavingAccount or Salary Account 
+
+animal is a generalization
+tiger, lion.. dog..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

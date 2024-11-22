@@ -8,6 +8,7 @@ app = FastAPI()
 
 # Route to add two numbers via query parameters
 @app.get("/sum_query", status_code=status.HTTP_200_OK)
+#below function will now not react to http event..why we did not register for the event
 def sum_query(a: int, b: int):
     """
     This endpoint takes two numbers as query parameters and returns their sum.

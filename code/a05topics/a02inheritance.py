@@ -4,6 +4,8 @@ class Machine:
         self.name = name
         self.model = model
         self.status = status
+        
+
 
     def start(self):
         """Simulate starting the machine."""

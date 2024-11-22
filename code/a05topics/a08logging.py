@@ -2,11 +2,11 @@ import logging
 
 # Configure logging
 logging.basicConfig(
-    level=logging.DEBUG,  # Set the minimum severity level to DEBUG
+    level=logging.ERROR,  # Set the minimum severity level to DEBUG
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',  # Log format
     handlers=[
-        logging.StreamHandler(),  # Log to console
-        logging.FileHandler("app.log")  # Log to a file
+        
+        logging.FileHandler("abc.pqr")  # Log to a file
     ]
 )
 

@@ -13,6 +13,7 @@ products_db = {}
 @app.route('/')
 def index():
     return render_template('index.html', products=products_db)
+    # photoframe, phototoshow
 
 # Route to create a product (GET and POST)
 @app.route('/create', methods=['GET', 'POST'])

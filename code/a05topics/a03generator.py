@@ -3,8 +3,7 @@ def number_generator(limit):
     number = 0
     while number < limit:
         yield number
-        
-        number += 1
+    number += 1
 
 # Create a generator that produces numbers from 0 to 4
 gen = number_generator(2)

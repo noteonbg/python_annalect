@@ -10,3 +10,9 @@ def display():
 
 # Calling the decorated function
 print(display())
+
+#this is a decorator example i am showing you should tell this program is really not worth why?
+#who created the decorator I
+#who is using the decorator I.
+#ok.. pathetic..
+
